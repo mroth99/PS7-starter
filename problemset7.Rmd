@@ -73,7 +73,7 @@ Help David (please do not e-mail David) by answering the following questions:
 
 - Do the two have a different style?
 
-2) Hand in this problem set via the [Github classroom assignment]():
+2) Hand in this problem set via the [Github classroom assignment](https://classroom.github.com/a/3dTXLLKc):
 
 We expect three files from you:
 
