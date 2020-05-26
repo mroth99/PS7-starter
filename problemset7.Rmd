@@ -1,0 +1,92 @@
+---
+title: "Problem Set 7"
+author: "David Rügamer, Julia Terhart, Philipp Kopper"
+date: "02 June 2020"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = FALSE)
+```
+
+# Resources
+
+1) Read chapter 27 on `Rmarkdown` in [R4DS](https://r4ds.had.co.nz/r-markdown.html).
+
+2) Read through the slides on `Git`.
+
+3) Read at least chapters 1-12 in [Happy Git with R](https://happygitwithr.com/).
+Make sure that you make Git work on your computer and in `RStudio`. 
+This is a __very__ significant task!
+We will relie on `Git` very much for the rest of the semester.
+Setting up `Git` may be an awful procedure but we relie on you to stay brave and work your own way through the guide.
+We can literally add nothing to what is written in the guide how to set it up conveniently.
+
+4) Optionally, complete the Datacamp Units provided on the moodle page for this topic.
+
+5) Read the whole problem set before starting work on it.
+
+# RMarkdown
+
+From now on we expect you to hand in your assignments as `Rmarkdown` files.
+We uploaded a template on the Moodle page which you can use.
+Always provide on `knitted` (PDF or html) version and the code via `.Rmd`.
+
+1) We attached a a very short `Rmd` file to the material of this week (lm.Rmd).
+Try to knit it. 
+You'll find that there are some errors.
+Debug the markdown until there is no error anymore and the document looks nice.
+Work in the `.Rmd` directly and _push_ it once you are done (see below).
+
+2) We attached a PDF to the material of this week (pem.pdf). 
+Try to recreate the document with the use of `Rmarkdown`, `R` and `Latex` code.
+
+# Git
+
+We set up a Github classroom for this class.
+You find it [here](https://classroom.github.com/classrooms/65912838-classroom).
+In the next weeks, we will exclusively share code there.
+Getting familiar with `Github` is time consuming.
+If everything goes right, it will suffice to use the following workflow to make changes for your projects when you work as an individual:
+
+- `git add -A`
+
+- `git commit -m"your commit message"`
+
+- `git push`
+
+(Of course you can achieve this also by the visual editor.)
+
+1) Have a look at the [repo for today](https://github.com/Statistische-Software-2020/PS7-Git)
+Philipp and Julia have been working on a research project together.
+David, as their boss, wants to know who contributed which parts of the code.
+Help David (please do not e-mail David) by answering the following questions:
+
+- Who is responsible for which functions?
+
+- Who contributed more to the code?
+
+- Who pushed more often?
+
+- Do the two have a different style?
+
+2) Hand in this problem set via the [Github classroom assignment]():
+
+We expect three files from you:
+
+- The filled skeleton for `pem_answer.Rmd`
+
+- The corrected file `lm.Rmd`
+
+- The filled skeleton for `git.Rmd`
+
+If meaningful also provide the knitted (PDF or html) document.
+
+```{r}
+sessionInfo()
+```
+
+You can hand in this problem set by the 8th of June in order to receive feedback.

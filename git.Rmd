@@ -1,0 +1,8 @@
+---
+title: "Problem Set 7 - Git Questions"
+author: "Your Name"
+date: "02 June 2020"
+output: pdf_document
+---
+
+Text answers suffice!
