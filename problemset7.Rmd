@@ -19,13 +19,14 @@ knitr::opts_chunk$set(echo = FALSE,
 2) Read through the slides on `Git`.
 
 3) Read at least chapters 1-12 in [Happy Git with R](https://happygitwithr.com/).
-Make sure that you make Git work on your computer and in `RStudio`. 
+Make sure that you make `Git` work on your computer and in `RStudio`. 
 This is a __very__ significant task!
-We will relie on `Git` very much for the rest of the semester.
-Setting up `Git` may be an awful procedure but we relie on you to stay brave and work your own way through the guide.
-We can literally add nothing to what is written in the guide how to set it up conveniently.
+We will rely on `Git` very much for the rest of the semester.
+Setting up `Git` may be an awful procedure but we rely on you to stay brave and work your own way through the guide.
+We can add nothing to what is written in the guide on how to set it up conveniently.
+Also make sure that you know how to set up a new `R` project with version control in `RStudio`.
 
-4) Optionally, complete the Datacamp Units provided on the moodle page for this topic.
+4) Optionally, complete the DataCamp Units provided on the Moodle page for this topic.
 
 5) Read the whole problem set before starting work on it.
 
@@ -33,23 +34,25 @@ We can literally add nothing to what is written in the guide how to set it up co
 
 From now on we expect you to hand in your assignments as `Rmarkdown` files.
 We uploaded a template on the Moodle page which you can use.
+(You won't need it for this problem set, though.)
 Always provide on `knitted` (PDF or html) version and the code via `.Rmd`.
 
-1) We attached a a very short `Rmd` file to the material of this week (lm.Rmd).
+1) We attached a very short `Rmd` file to the material of this week (`lm.Rmd`).
 Try to knit it. 
 You'll find that there are some errors.
 Debug the markdown until there is no error anymore and the document looks nice.
 Work in the `.Rmd` directly and _push_ it once you are done (see below).
 
-2) We attached a PDF to the material of this week (pem.pdf). 
-Try to recreate the document with the use of `Rmarkdown`, `R` and `Latex` code.
+2) We attached a PDF to the material of this week (`pem.pdf`). 
+Try to recreate the document with the use of `Rmarkdown`, `R`, and `Latex` code.
+Hand in the solution in an `Rmd` file.
 
 # Git
 
 We set up a Github classroom for this class.
 You find it [here](https://classroom.github.com/classrooms/65912838-classroom).
 In the next weeks, we will exclusively share code there.
-Getting familiar with `Github` is time consuming.
+Getting familiar with `Github` is time-consuming.
 If everything goes right, it will suffice to use the following workflow to make changes for your projects when you work as an individual:
 
 - `git add -A`
@@ -58,12 +61,12 @@ If everything goes right, it will suffice to use the following workflow to make 
 
 - `git push`
 
-(Of course you can achieve this also by the visual editor.)
+(Of course, you can achieve this also by the visual editor.)
 
-1) Have a look at the [repo for today](https://github.com/Statistische-Software-2020/PS7-Git)
+1) Have a look at the _[repo for today](https://github.com/Statistische-Software-2020/PS7-Git)_
 Philipp and Julia have been working on a research project together.
-David, as their boss, wants to know who contributed which parts of the code.
-Help David (please do not e-mail David) by answering the following questions:
+David, as their supervisor, wants to know who contributed which parts of the code.
+Help David (please do __not__ e-mail David) by answering the following questions:
 
 - Who is responsible for which functions?
 
@@ -73,7 +76,18 @@ Help David (please do not e-mail David) by answering the following questions:
 
 - Do the two have a different style?
 
-2) Hand in this problem set via the [Github classroom assignment](https://classroom.github.com/a/3dTXLLKc):
+2) Hand in this problem set via the [Github classroom assignment](https://classroom.github.com/classrooms/65912838-classroom/assignments/problem-set-7):
+
+(INVITATION: https://classroom.github.com/classrooms/65912838-classroom/assignments/problem-set-7)
+
+A Github classroom assignment works like the following.
+You open the supplied link.
+Then, you accept the assignment.
+This will clone the repository with the starter code and create your personal repo.
+This repo can now be used as any other in Github.
+Create an `R` project in `RStudio` (version control) and supply the URL of your personal repository.
+You can work locally now and commit changes.
+Once you are done with the assignment, commit your changes with the message "ALL DONE" and push them.
 
 We expect three files from you:
 
@@ -84,9 +98,10 @@ We expect three files from you:
 - The filled skeleton for `git.Rmd`
 
 If meaningful also provide the knitted (PDF or html) document.
+If possible, we will provide feedback in the Diff-file.
 
 ```{r}
 sessionInfo()
 ```
 
-You can hand in this problem set by the 8th of June in order to receive feedback.
+You can hand in this problem set by the 8th of June to receive feedback.
