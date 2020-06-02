@@ -78,7 +78,7 @@ Help David (please do __not__ e-mail David) by answering the following questions
 
 2) Hand in this problem set via the [Github classroom assignment](https://classroom.github.com/classrooms/65912838-classroom/assignments/problem-set-7):
 
-(INVITATION: https://classroom.github.com/classrooms/65912838-classroom/assignments/problem-set-7)
+(INVITATION:https://classroom.github.com/a/3dTXLLKc)
 
 A Github classroom assignment works like the following.
 You open the supplied link.
