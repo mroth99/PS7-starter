@@ -1,8 +1,25 @@
 ---
 title: "Problem Set 7 - Git Questions"
-author: "Your Name"
-date: "02 June 2020"
+author: "Markus Roth"
+date: "08 June 2020"
 output: pdf_document
 ---
 
-Text answers suffice!
+
+1. 
+- Phillip is responsible for:
+  - pem_cr
+
+- Julia is responsible :
+  - summary.pem_cr
+  - print.pem_cr
+  
+2.
+  I'd say Phillip contributed more to the code. He added and deleted a lot of code, whereat Julia "only" contributed 
+  one  huge chunk of code.
+  
+3.
+  Phillip pushed far more often than Julia. He pushed 6 times, she pushed only once. 
+  
+4.
+  Yes they do have different styles. Phillip tends to pushing more frequently. Julia only pushes when she's sure the      code is correct.

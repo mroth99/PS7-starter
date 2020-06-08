@@ -5,10 +5,7 @@ date: "02 June 2020"
 output: pdf_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE,
-                      eval = FALSE)
-```
+
 # Data preprocessing
 
 As outlined in the previous section, the __PEM data structure__ deals with the survival problem as a count
@@ -23,7 +20,8 @@ the observed event time (obs_times) and the observed event (status) As usual in 
 status 1 refers to the event while 0 to a censoring. A priori the selected interval cut points defining the
 baseline hazard in each interval are arbitrary.
 
-```{r echo=TRUE}  
+
+```r
 library(pammtools)
 library(tidyr)
 library(dplyr)
@@ -31,14 +29,6 @@ data_set <- data.frame(id = 1:3, obs_times = c(1, 0.5, 2), status = c(0, 1, 1))
 ped <- as_ped(data = data_set, Surv(obs_times, status) ~ ., id = "id",
               cut = seq(0, max(data_set$obs_times), 0.4))
 ```
-```{r eval=c(37,41)}
-library(pammtools)
-data_set <- data.frame(id = 1:3, obs_times = c(1, 0.5, 2), status = c(0, 1, 1))
-data_set
 
-ped <- as_ped(data = data_set, Surv(obs_times, status) ~ ., id = "id",
-cut = seq(0, max(data_set$obs_times), 0.4))
-ped
-```
 The offset reflects information on the observed survival time. Re-arranging the Poisson likelihood of the PEM
 one can derive the following definition:
