@@ -30,15 +30,38 @@ library(dplyr)
 data_set <- data.frame(id = 1:3, obs_times = c(1, 0.5, 2), status = c(0, 1, 1))
 ped <- as_ped(data = data_set, Surv(obs_times, status) ~ ., id = "id",
               cut = seq(0, max(data_set$obs_times), 0.4))
+data_set
 ```
-```{r eval=c(37,41)}
-library(pammtools)
+```{r eval=TRUE, echo=FALSE, message=FALSE}
 data_set <- data.frame(id = 1:3, obs_times = c(1, 0.5, 2), status = c(0, 1, 1))
 data_set
+```
+```{r echo=TRUE}
+ped
+```
+
+```{r eval=TRUE, echo=FALSE, message=FALSE}
+library(pammtools)
+
+data_set <- data.frame(id = 1:3, obs_times = c(1, 0.5, 2), status = c(0, 1, 1))
 
 ped <- as_ped(data = data_set, Surv(obs_times, status) ~ ., id = "id",
 cut = seq(0, max(data_set$obs_times), 0.4))
 ped
 ```
-The offset reflects information on the observed survival time. Re-arranging the Poisson likelihood of the PEM
+\pagebreak
+
+
+                                  
+The offset reflects information on the observed survival time. Re-arranging the *Poisson likelihood* of the PEM
 one can derive the following definition:
+
+\begin{equation} exp(o_{ij}) = t_{ij} \end{equation}
+
+where _o~ij~_ reflects the offset of individual *i* at time *j* and _t~ij~_ to observed failure time. Effectively, this means
+that the offset _o~ij~_ is equal to the natural logarithm of interval length of the observation of interest *i* if there
+is an interval cut for each event time.
+
+\begin{equation} o_{ij} = log(t_{ij}-t_{ij-1}) \end{equation}
+
+TO BE CONTINUED (BUT NOT BY YOU)
