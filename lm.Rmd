@@ -20,7 +20,7 @@ where $X is the data or design matrix, $y$ the dependent variable and $beta$ the
 A model can be fit with the following code (using the `iris` data):
 
 ```{r}
-linear_model <- lm(Petal.Width ~.)
+linear_model <- lm(Petal.Width ~. , data = iris)
 ```
 
 A summary can be obtained via:
